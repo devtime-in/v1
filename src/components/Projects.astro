@@ -1,10 +1,11 @@
 ---
 import { content } from "src/content/Content";
+import Component from "./Component.astro";
 
 const reviews = content.projects.reviews;
 ---
 
-<section class="py-16 sm:py-20">
+<!-- <section class="py-16 sm:py-20">
   <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div>
       <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl mb-20" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="top-center">
@@ -37,5 +38,33 @@ const reviews = content.projects.reviews;
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+<Component title={content.projects.heading}>
+  <div class="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
+    {
+      reviews.map((testimonial, index) => (
+        <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0" data-aos="fade-up" data-aos-duration="1200" data-aos-delay={`${index * 200}`} data-aos-anchor-placement="center-bottom"
+        >
+          <div class="flex flex-row gap-2">
+            {[...Array(5)].map((_, starIndex) => (
+              <svg key={starIndex} class="h-6 w-6 text-primary-600 dark:text-primary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+              >
+                <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" />
+              </svg>
+            ))}
+          </div>
+          <blockquote class="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
+            <p>{testimonial.message}</p>
+          </blockquote>
+          <figcaption class="flex flex-col gap-4">
+            <div class="text-center">
+              <div class="text-base font-medium">{testimonial.name}</div>
+            </div>
+          </figcaption>
+        </figure>
+      ))
+    }
+  </div>
+</Component>
 

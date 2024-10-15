@@ -1,33 +1,24 @@
 ---
 import { content } from "src/content/Content"
+import Component from "./Component.astro";
 
 const services = content.services.services;
 ---
 
-<section>
-  <div class="bg-primary-500/10">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
-      <div class="flex flex-col gap-12 sm:gap-16">
-        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-          {content.services.heading}
-        </h2>
-        <div class="grid gap-8 lg:grid-cols-3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
-          {
-            services.map((service, index) => (
-              <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8" data-aos="fade-up" data-aos-duration="1200" data-aos-delay={`${index * 200}`} data-aos-anchor-placement="center-bottom">
-                <p class="text-sm">{service.step}</p>
-                <div class="flex flex-col gap-4">
-                  <h3 class="text-xl font-medium">{service.name}</h3>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))
-          }
+<Component title={content.services.heading} extraCss="bg-primary-500/10" >
+  <div class="grid gap-8 lg:grid-cols-3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+    {
+      services.map((service, index) => (
+        <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8" data-aos="fade-up" data-aos-duration="1200" data-aos-delay={`${index * 200}`} data-aos-anchor-placement="center-bottom">
+          <p class="text-sm">{service.step}</p>
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-medium">{service.name}</h3>
+            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+              {service.description}
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
+      ))
+    }
   </div>
-</section>
-
+</Component>
