@@ -34,6 +34,9 @@ export const content = {
     general: {
         companyName: "Dev Time Technologies",
         companyTextLogo: textLogo.src,
+        message: "Message",
+        email: "Email",
+        submit: "Submit",
     },
     header: {
         navigationButtons: [
@@ -199,5 +202,59 @@ export const content = {
               icon: redux.src,
             },
           ]
+    },
+    services: {
+      heading: 'Services',
+      services : [
+        {
+          step: '01',
+          name: 'Design',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        },
+        {
+          step: '02',
+          name: 'Develop',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        },
+        {
+          step: '03',
+          name: 'Maintain',
+          description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        },
+      ]
+    },
+    projects: {
+      heading: 'Projects',
+      reviews: [
+        {
+          name: 'Luca M',
+          message:
+            '“Always the best hamburger place in Biella. In addition to the classic sandwiches, the special ones that alternate throughout the year are also very good, such as the Autumn Special (see photo) with Arnad lard, honey and walnuts. Possibility to accompany everything with different local craft beers.”',
+        },
+        {
+          name: 'Nicole C',
+          message:
+            '“Always a pleasure to return as a fixed stop every time I return to Biella. Superb quality of ingredients and selection of local beers.”',
+        },
+        {
+          name: 'Lynn Lynn',
+          message:
+            '“Chanced upon this place due to a short rain. Was super impressed by the food , caffe latte and very goo service ! Will be back again !”',
+        },
+      ]
+    },
+    contact: {
+      heading: 'Get in Touch',
+      subHeading: "We are always happy to hear from our customers. Please feel free to contact us with any questions, comments, or concerns.",
+      address: '501, Pride Sapphire, Main Road, near Amin Marg, Vidhyakunj Society, Sirvar Park, Kotecha Nagar, Rajkot, Gujarat 360001',
+      phone: '+91 9913357614',
+      email: 'romikmakavana1214@gmail.com'
+    },
+    footer: {
+      heading: 'Footer',
+      discription: "We work to offer you an always fresh and excellent product using quality raw materials carefully selected from local suppliers."
     }
 }
