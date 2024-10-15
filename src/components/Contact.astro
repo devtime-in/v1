@@ -6,7 +6,7 @@ import { content } from "src/content/Content";
 <section class=" bg-primary-500/10">
   <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
     <div class="flex justify-between gap-20 max-lg:gap-10 max-sm:flex-col">
-      <div class="w-full flex flex-col gap-4 sm:gap-6">
+      <div class="w-full flex flex-col gap-4 sm:gap-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <div>
           <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">
             {content.contact.heading}
@@ -73,6 +73,7 @@ import { content } from "src/content/Content";
         <!-- Full name input -->
         <div>
           <input
+            data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
             type="text"
             name="full-name"
             id="full-name"
@@ -85,6 +86,7 @@ import { content } from "src/content/Content";
         <!-- Email input -->
         <div>
           <input
+            data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
             type="email"
             name="email"
             id="email"
@@ -98,6 +100,7 @@ import { content } from "src/content/Content";
         <div>
           <label for="message" class="sr-only">{content.general.message}</label>
           <textarea
+            data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
             name="message"
             id="message"
             rows="3"
@@ -107,6 +110,7 @@ import { content } from "src/content/Content";
 
         <div>
           <button
+            data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
             class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
             type="submit"
           >
