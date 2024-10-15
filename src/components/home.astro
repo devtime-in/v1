@@ -1,0 +1,37 @@
+---
+import TypingEffect from '@/components/TypingEffect';
+import { content } from "../content/content.ts";
+---
+
+<section class="h-[calc(100vh_-_4.5rem)] bg-primary-500/10">
+    <!-- <div class="mx-auto flex h-full max-w-7xl items-center px-6 py-16 sm:py-20">
+        <div class="w-full flex max-md:flex-col h-full justify-between">
+            <div class="h-full w-full max-md:text-center flex flex-col justify-center">
+                <h2 class="text-5xl max-md:text-4xl font-bold">The DevTime technologies</h2>
+                <div class="w-full max-md:flex max-md:justify-center">
+                    <h2 class="relative">
+                        <TypingEffect />
+                    </h2>
+                </div>
+            </div>
+            <div class="items-center h-full w-full flex mix-blend-darken border">
+                <img src="assets/svg/company-logo.svg" alt="banner" class="w-full p-4" />
+            </div>
+        </div>
+    </div> -->
+    <div class="mx-auto flex h-full max-w-7xl items-center px-6 py-16 sm:py-20">
+        <div class="flex h-full w-full flex-col items-center justify-between md:flex-row">
+            <div class="mb-8 flex flex-col justify-center text-center md:mb-0 md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="text-5xl font-bold">{content.home.heading}</h2>
+                <div class="relative mt-4 max-md:flex max-md:justify-center">
+                    <h2 class="relative" data-aos="zoom-in" data-aos-duration="1200">
+                        <TypingEffect />
+                    </h2>
+                </div>
+            </div>
+            <div class="flex w-full justify-center mix-blend-darken md:w-1/2" data-aos="fade-left" data-aos-duration="1000">
+                <img src={content.home.banner} alt="banner" class="h-auto max-w-full" />
+            </div>
+        </div>
+    </div>
+</section>

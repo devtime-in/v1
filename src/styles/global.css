@@ -1,5 +1,14 @@
-body {
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  body {
     margin: 0;
-    top: 0;
-    right: 0;
-}
+    padding: 0;
+    left: 0;
+  }
+  .animate-blink {
+    animation: blink 0.7s step-end infinite;
+  }

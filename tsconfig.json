@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+		"strictNullChecks": true,
+		"baseUrl": ".",
+		"verbatimModuleSyntax": true,
+		"paths": {
+			"@/components/*": ["src/components/*.astro"],
+			"@/layouts/*": ["src/layouts/*.astro"],
+			"@/utils": ["src/utils/index.ts"],
+			"@/utils/*": ["src/utils/*"],
+			"@/i18n/*": ["src/i18n/*"],
+			"@/assets/*": ["src/assets/*"],
+		}
+	},
 }

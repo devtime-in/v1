@@ -1,0 +1,45 @@
+<h1 id="typing-text" class="max-sm:text-3xl text-4xl font-bold text-primary-500 border-r-2 animate-blink absolute"></h1>
+
+<script>
+import { content } from "src/content/content";
+
+  let displayedText = "";
+  let index = 0;
+  const texts = content.home.subHeading;   
+
+  const typeText = () => {
+    const currentText = texts[index];
+    let charIndex = 0;
+
+    const typeInterval = setInterval(() => {
+      const typingElement = document.getElementById('typing-text');
+      if (typingElement && charIndex < currentText.length) {
+        displayedText += currentText[charIndex];
+        charIndex++;
+        typingElement.innerText = displayedText;
+      } else {
+        clearInterval(typeInterval);
+        setTimeout(() => removeText(), 1000);
+      }
+    }, 100); // Adjust typing speed
+  };
+
+  const removeText = () => {
+    let charIndex = displayedText.length;
+
+    const removeInterval = setInterval(() => {
+      const typingElement = document.getElementById('typing-text');
+      if (typingElement && charIndex > 0) {
+        displayedText = displayedText.slice(0, charIndex - 1);
+        charIndex--;
+        typingElement.innerText = displayedText;
+      } else {
+        clearInterval(removeInterval);
+        index = (index + 1) % texts.length;
+        setTimeout(() => typeText(), 0);
+      }
+    }, 50);
+  };
+
+  typeText();
+</script>

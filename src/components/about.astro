@@ -1,0 +1,49 @@
+---
+import { content } from "src/content/content";
+
+// import { getLangFromParams, useTranslations } from '@/i18n/utils';
+// const lang = getLangFromParams(Astro.params);
+// const t = useTranslations(lang);
+
+const aboutUsSections = content.about.detils;
+const languages = content.about.languages;
+---
+
+<section>
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <div class="w-full">
+      <h2 data-aos="fade-in" class="text-center text-4xl font-bold">{content.about.heading}</h2>
+      <div class="mx-auto mt-8">
+        <div class="flex flex-col gap-12">
+          <div>
+            {aboutUsSections.map((section, index) => (
+              <div
+                data-aos="fade-up" data-aos-duration="600"
+                class={`my-8 transition-transform duration-300 ease-in-out flex flex-col items-center gap-8 sm:flex-row ${
+                  index % 2 === 0 ? 'sm:flex-row-reverse' : ''
+                }`}
+              >
+                <div class="flex-shrink-0" data-aos="zoom-in" data-aos-duration="800">
+                  <img src={section.image} alt={section.title} class="h-auto w-80 object-cover rounded-3xl" />
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="600">
+                  <h2 class="text-2xl font-bold text-brightBlue">{section.title}</h2>
+                  <p>{section.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="flex w-fit flex-wrap justify-center gap-10 max-sm:max-h-[calc(100vh_-_4.5rem)] max-sm:overflow-auto max-sm:rounded-2xl max-sm:bg-primary-100 max-sm:dark:bg-primary-900 max-sm:py-4" data-aos="fade-up" data-aos-duration="600">
+            {languages.map((lang, index) => (
+              <div class="flex w-full max-w-[170px] hover:scale-125 transition-transform duration-300 ease-in-out items-center gap-2 rounded-md px-4 py-2">
+                <img src={lang.icon} class="h-10 w-10 items-center" alt={lang.name} />
+                <p>{lang.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
