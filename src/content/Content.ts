@@ -1,7 +1,7 @@
 import textLogo from "../assets/png/text-logo.png";
 import companyBanner from "@/assets/svg/company-logo.svg";
-import about1 from "@/assets/jpeg/about1.jpeg";
-import about2 from "@/assets/jpeg/about2.jpeg";
+import about1 from "@/assets/png/healthcare.png";
+import about2 from "@/assets/png/banking.png";
 import html5 from "@/assets/svg/html5-icon.svg";
 import css from "@/assets/svg/css-icon.svg";
 import javascript from "@/assets/svg/javascript-icon.svg";
@@ -29,6 +29,9 @@ import stripe from "@/assets/svg/stripe-icon.svg";
 import paypal from "@/assets/svg/paypal-icon.svg";
 import tiptap from "@/assets/svg/tiptap-icon.png";
 import redux from "@/assets/svg/redux-icon.svg";
+import gitlab from "@/assets/png/gitlab.png";
+import vercel from "@/assets/png/vercel.png";
+import vue from "@/assets/png/vue.png";
 
 export const content = {
   general: {
@@ -45,7 +48,7 @@ export const content = {
         href: "",
       },
       {
-        name: "About",
+        name: "Technologies",
         href: "#about",
       },
       {
@@ -68,54 +71,52 @@ export const content = {
     banner: companyBanner.src
   },
   about: {
-    heading: 'About Us',
+    heading: 'Industries We Serve',
     detils: [
       {
-        title: 'A bit about me',
-        content: `
-                I'm a self-taught web developer and Mobile App Developer with experience in designing
-                new features from ideation to production, implementation of wireframes and design
-                flows into high-performance software applications. I take into consideration the user
-                experience while writing reusable and efficient code. I passionately combine good
-                design, technology, and innovation in all my projects, which I like to accompany from
-                the first idea to release. Currently, I'm focused on the backend development.
-              `,
+        title: 'Healthcare',
+        content: 'We have a wealth of experience in developing affordable, compliant, and user-centric enterprise healthcare solutions.',
         image: about1.src
       },
       {
-        title: 'Technologies and Tools',
-        content: `
-                Using a combination of cutting-edge technologies and reliable open-source software I
-                build user-focused, performant apps and websites for smartphones, tablets, and
-                desktops.
-              `,
+        title: 'Banking and Fintech',
+        content: 'DevTime Technologies for the Banking & Financial Services (BFS) helps organization through innovative approaches and a highly efficient and experienced team',
+        image: about2.src
+      },
+      {
+        title: 'Retail & Ecommerce',
+        content: 'Whether you`re a startup, growing business, or established brand, our visually striking e-commerce solutions are designed to captivate your customers and drive conversions.',
+        image: about2.src
+      },
+      {
+        title: 'Game Deve',
+        content: 'Whether you`re a startup, growing business, or established brand, our visually striking e-commerce solutions are designed to captivate your customers and drive conversions.',
         image: about2.src
       },
     ],
+  },
+  technologies: {
+    heading: 'Technologies We Serve',
     languages: [
-      {
-        name: 'HTML 5',
-        icon: html5.src,
-      },
-      {
-        name: 'CSS',
-        icon: css.src,
-      },
       {
         name: 'JavaScript',
         icon: javascript.src,
+      },
+      {
+        name: 'TypeScript',
+        icon: typescript.src,
       },
       {
         name: 'React js',
         icon: reactjs.src,
       },
       {
-        name: 'Angular',
-        icon: angular.src,
+        name: 'Vue js',
+        icon: vue.src,
       },
       {
-        name: 'TypeScript',
-        icon: typescript.src,
+        name: 'Angular',
+        icon: angular.src,
       },
       {
         name: 'Bootstrap',
@@ -178,8 +179,16 @@ export const content = {
         icon: heroku.src,
       },
       {
+        name: 'Vercel',
+        icon: vercel.src,
+      },
+      {
         name: 'Git',
         icon: git.src,
+      },
+      {
+        name: 'GitLab',
+        icon: gitlab.src,
       },
       {
         name: 'Postman',
@@ -204,23 +213,41 @@ export const content = {
     ]
   },
   services: {
-    heading: 'Services',
+    heading: 'Services Provided By Us',
     services: [
       {
         step: '01',
-        name: 'Design',
+        name: 'Website Design',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
       },
       {
         step: '02',
-        name: 'Develop',
+        name: 'Website Development',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
       },
       {
         step: '03',
-        name: 'Maintain',
+        name: 'Game Development',
+        description:
+          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      },
+      {
+        step: '04',
+        name: 'IT Consulting',
+        description:
+          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      },
+      {
+        step: '05',
+        name: 'Portal Development',
+        description:
+          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      },
+      {
+        step: '06',
+        name: 'Website Maintenance',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
       },
@@ -230,31 +257,31 @@ export const content = {
     heading: 'Reviews',
     reviews: [
       {
-        name: 'Luca M',
+        name: 'Mark Reith',
         message:
-          '“Always the best hamburger place in Biella. In addition to the classic sandwiches, the special ones that alternate throughout the year are also very good, such as the Autumn Special (see photo) with Arnad lard, honey and walnuts. Possibility to accompany everything with different local craft beers.”',
+          '“I had the pleasure of working with DevTime on a contract project, and I was thoroughly impressed by their skills and dedication. As a frontend development company specializing in Python, Django, Next.js, Tiptap, and Tailwind CSS, DevTime employee proved to be a valuable asset to our development team. Their ability to quickly grasp complex requirements and deliver high-quality solutions was instrumental in meeting our urgent deadlines.”',
       },
       {
-        name: 'Nicole C',
+        name: 'Sagar Vasoya',
         message:
-          '“Always a pleasure to return as a fixed stop every time I return to Biella. Superb quality of ingredients and selection of local beers.”',
+          '“We have worked on many projects. Having great knowledge about backend coding, They believes in base concept. Always work with first principle.”',
       },
       {
-        name: 'Lynn Lynn',
+        name: 'Sandro Antidze',
         message:
-          '“Chanced upon this place due to a short rain. Was super impressed by the food , caffe latte and very goo service ! Will be back again !”',
+          '“I’m delighted to endorse DevTime for full-stack developers. Their employees has proficiency in a wide range of programming languages and frameworks is evident in the exceptional quality of their work. DevTime`s employees dedication to problem-solving and attention to detail make them an invaluable asset to any team. Moreover, their friendly demeanor and excellent communication skills create a positive and productive work environment. I wholeheartedly recommend DevTime for their technical expertise, professionalism, and amiable personality.”',
       },
     ]
   },
   contact: {
     heading: 'Get in Touch',
-    subHeading: "We are always happy to hear from our customers. Please feel free to contact us with any questions, comments, or concerns.",
+    subHeading: "We are always happy to hear from you. Please feel free to contact us with any questions, comments, or concerns.",
     address: '501, Pride Sapphire, Main Road, near Amin Marg, Vidhyakunj Society, Sirvar Park, Kotecha Nagar, Rajkot, Gujarat 360001',
-    phone: '+91 9913357614',
-    email: 'romikmakavana1214@gmail.com'
+    phone: '+91 9265129135',
+    email: 'info@devtime.in'
   },
   footer: {
     heading: 'Footer',
-    discription: "We work to offer you an always fresh and excellent product using quality raw materials carefully selected from local suppliers."
+    discription: "We work to deliver a consistently innovative and high-quality product by utilizing carefully selected, top technologies and frameworks."
   }
 }
