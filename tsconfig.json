@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+		"module": "ESNext", // or "ES6"
 		"strictNullChecks": true,
 		"baseUrl": ".",
 		"verbatimModuleSyntax": true,
