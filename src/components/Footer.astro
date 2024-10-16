@@ -3,29 +3,8 @@ import { content } from "src/content/Content";
 
 const bottomLinks = [
   {
-    header: 'Page',
-    links: [
-      {
-        name: 'Home',
-        href: '/',
-        isExternal: false,
-      },
-      {
-        name: 'About',
-        href: '/about',
-        isExternal: false,
-      },
-      {
-        name: 'Services',
-        href: '/services',
-        isExternal: false,
-      },
-      {
-        name: 'Projects',
-        href: '/projects',
-        isExternal: false,
-      },
-    ],
+    header: "Page",
+    links: [...content.header.navigationButtons],
   },
 ];
 
@@ -44,7 +23,10 @@ const corentYear = new Date().getFullYear();
             src={content.general.companyTextLogo}
             alt={content.general.companyName}
           />
-          <p data-aos="zoom-in" class="text-base text-primary-950/70 dark:text-primary-200/70">
+          <p
+            data-aos="zoom-in"
+            class="text-base text-primary-950/70 dark:text-primary-200/70"
+          >
             {content.footer.discription}
           </p>
         </div>
@@ -55,17 +37,20 @@ const corentYear = new Date().getFullYear();
             bottomLinks.map((group) => (
               <div class="flex flex-col gap-4">
                 <p class="text-base font-medium">{group.header}</p>
-                <ul role="list" class="flex flex-col gap-3" data-aos="fade-up" data-aos-duration="600">
+                <ul
+                  role="list"
+                  class="flex flex-col gap-3"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
                   {group.links.map((link) => (
                     <li>
                       <a
                         href={link.href}
                         class="inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200"
-                        target={link.isExternal ? '_blank' : undefined}
-                        rel={link.isExternal ? 'noopener' : undefined}
                       >
                         {link.name}
-                        {link.isExternal && (
+                        {/* {link.isExternal && (
                           <svg
                             class="h-4 w-4"
                             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +60,7 @@ const corentYear = new Date().getFullYear();
                           >
                             <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z" />
                           </svg>
-                        )}
+                        )} */}
                       </a>
                     </li>
                   ))}
@@ -85,7 +70,9 @@ const corentYear = new Date().getFullYear();
           }
         </div>
       </div>
-      <p class="text-sm text-primary-950/70 dark:text-primary-200/70 w-full text-center mt-10">
+      <p
+        class="text-sm text-primary-950/70 dark:text-primary-200/70 w-full text-center mt-10"
+      >
         {corentYear} © {content.general.companyName}. All rights reserved.
       </p>
     </div>

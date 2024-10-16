@@ -2,11 +2,12 @@
 interface Props {
 	title: string;
     extraCss?: string;
+    componentId?: string;
 }
 
-const { title, extraCss } = Astro.props;
+const { title, extraCss , componentId } = Astro.props;
 ---
-<section class={`${extraCss}`}>
+<section class={`${extraCss}`} id={`${componentId}`}>
     <div class={`mx-auto max-w-7xl px-6 py-16 sm:py-20`}>
         <div class="w-full">
             <h2 data-aos="fade-in" class="text-center text-4xl font-bold">{title}</h2>
