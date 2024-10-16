@@ -262,9 +262,9 @@ export const content = {
           '“I had the pleasure of working with DevTime on a contract project, and I was thoroughly impressed by their skills and dedication. As a frontend development company specializing in Python, Django, Next.js, Tiptap, and Tailwind CSS, DevTime employee proved to be a valuable asset to our development team. Their ability to quickly grasp complex requirements and deliver high-quality solutions was instrumental in meeting our urgent deadlines.”',
       },
       {
-        name: 'Sagar Vasoya',
+        name: 'Mohamed Ali Akram Zerarka',
         message:
-          '“We have worked on many projects. Having great knowledge about backend coding, They believes in base concept. Always work with first principle.”',
+          '“DevTime is an exceptional development company that has skillfully utilized Laravel, Alpine.js, Livewire, and Node.js on the Kheops project. They excelled in developing a robust backend and an interactive frontend, contributing to a solid architecture and enhanced user experience. The team at DevTime is also effective communicators and valuable collaborators, always ready to share their expertise and tackle problems proactively. Their ongoing commitment to learning and innovation makes them a major asset to any project or company. I highly recommend DevTime for their professionalism and dedication.”',
       },
       {
         name: 'Sandro Antidze',
