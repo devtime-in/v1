@@ -219,37 +219,37 @@ export const content = {
         step: '01',
         name: 'Website Design',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+          'We create visually appealing, user-friendly websites tailored to your business needs. Our designs focus on functionality, aesthetics, and a seamless user experience to help you establish a strong online presence and drive conversions.',
       },
       {
         step: '02',
         name: 'Website Development',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+          'We build fast, secure, and scalable websites with clean, efficient code. From e-commerce to custom web applications, our development solutions ensure performance, responsiveness, and a seamless user experience.',
       },
       {
         step: '03',
         name: 'Game Development',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+          'We create immersive, engaging games with seamless performance across platforms. Our team specializes in developing interactive experiences with stunning visuals, intuitive gameplay, and optimized mechanics for an unforgettable gaming experience.',
       },
       {
         step: '04',
         name: 'IT Consulting',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+          'We provide expert IT consulting services to optimize your technology infrastructure. Our solutions streamline operations, improve security, and support your business goals with tailored strategies for growth and innovation.',
       },
       {
         step: '05',
         name: 'Portal Development',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+          'We develop custom web portals that streamline access to critical information and services. Our portals are user-friendly, secure, and scalable, enhancing collaboration and improving efficiency for businesses and users alike.',
       },
       {
         step: '06',
         name: 'Website Maintenance',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+          'We offer comprehensive website maintenance services, ensuring your site remains secure, up-to-date, and fully functional. From performance optimization to regular updates, we keep your website running smoothly and efficiently.',
       },
     ]
   },
@@ -278,7 +278,7 @@ export const content = {
     subHeading: "We are always happy to hear from you. Please feel free to contact us with any questions, comments, or concerns.",
     address: '501, Pride Sapphire, Main Road, near Amin Marg, Vidhyakunj Society, Sirvar Park, Kotecha Nagar, Rajkot, Gujarat 360001',
     phone: '+91 9265129135',
-    email: 'info@devtime.in'
+    email: 'contact@devtime.in'
   },
   footer: {
     heading: 'Footer',
